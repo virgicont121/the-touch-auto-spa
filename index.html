@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Touch Auto Spa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- HERO WRAPPER -->
+<section class="hero-wrapper">
+  <img src="./img/bubbles.png" alt="Bubbles background" class="bubbles-bg" />
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo-area">
+        <img src="./img/logo.png" alt="The Touch Auto Spa" class="logo-img" />
+      </div>
+      <a href="tel:17868484691" class="phone-btn">(786) 848-4691</a>
+    </div>
+  </nav>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-content">
+    <h1>Mobile Car Wash in Miami</h1>
+    <p>Your car needs a wash? Don’t stop. We come to you.<br>Keep moving like a true leader.</p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn">View Services</a>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </div>
+
+  <!-- CURVA -->
+  <div class="curve-overlap">
+    <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#f4f7fb" d="M0,40 C600,100 900,0 1440,60 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- VALUE SECTION -->
+<section class="value-section">
+  <div class="value-grid">
+    <div class="value-text">
+      <h2>Luxury isn't expensive — it's time-saving.</h2>
+      <p>And that’s exactly what we deliver.</p>
+      <p>At The Touch Auto Spa, we bring the wash directly to your home, office, or wherever you are.<br>No lines. No driving. No waiting.</p>
+      <p>It’s simple. You stay in motion. We take care of the rest.</p>
+    </div>
+    <div class="value-image">
+      <img src="./img/van.PNG" alt="The Touch Auto Spa Van" />
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+  <h2>Choose your car care experience</h2>
+  <p class="cta-inline">Hover to discover what’s included in each service</p>
+
+  <div class="flip-card-grid">
+    <!-- Card 1 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          Basic Wash<br><small>From $25</small>
+        </div>
+        <div class="flip-back">
+          <ul>
+            <li>Exterior hand wash</li>
+            <li>Foam + rinse</li>
+            <li>Microfiber dry</li>
+            <li>Window cleaning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          Extended Wash<br><small>From $40</small>
+        </div>
+        <div class="flip-back">
+          <ul>
+            <li>Exterior + interior wash</li>
+            <li>Vacuuming</li>
+            <li>Surface & dash wipe</li>
+            <li>Window cleaning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          Basic Detailing<br><small>From $70</small>
+        </div>
+        <div class="flip-back">
+          <ul>
+            <li>Shampoo carpets & seats</li>
+            <li>Full exterior detailing</li>
+            <li>Surface treatment</li>
+            <li>Interior finish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          Full Detailing<br><small>From $120</small>
+        </div>
+        <div class="flip-back">
+          <ul>
+            <li>Includes all prior services</li>
+            <li>Wax polish</li>
+            <li>Engine cleaning</li>
+            <li>Premium finish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="booking" id="booking">
+  <h2>Book Your Appointment</h2>
+  <p class="booking-sub">We'll confirm your reservation as soon as we receive your request.</p>
+
+  <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="address" placeholder="Address in Miami" required>
+    <select name="service" required>
+      <option value="">Select a Service</option>
+      <option value="Basic Wash">Basic Wash</option>
+      <option value="Extended Wash">Extended Wash</option>
+      <option value="Basic Detailing">Basic Detailing</option>
+      <option value="Full Detailing">Full Detailing</option>
+    </select>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <button type="submit" class="btn">Confirm Booking</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>📍 Miami, FL — The Touch Auto Spa</p>
+  <p>📞 <a href="tel:17868484691">Call us: (786) 848-4691</a></p>
+  <p>Follow us on 
+    <a href="https://instagram.com/thetouch_auto_spa" target="_blank">Instagram</a> & 
+    <a href="https://facebook.com/thetouch_auto_spa" target="_blank">Facebook</a>
+  </p>
+  <p>© 2025 The Touch Auto Spa</p>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/17868484691?text=Hi!%20I’d%20like%20to%20book%20a%20car%20wash." 
+   class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+</body>
+</html>

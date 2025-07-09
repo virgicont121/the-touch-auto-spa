@@ -1,0 +1,385 @@
+/* ---------------------- RESET & BASE ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.7;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------------- HERO WRAPPER ---------------------- */
+.hero-wrapper {
+  position: relative;
+  background: linear-gradient(to right, #053687, #2b7bd3);
+  color: #fff;
+  overflow: hidden;
+  padding-bottom: 140px;
+  z-index: 0;
+}
+
+.bubbles-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 200px;
+  max-width: 500px;
+}
+
+.phone-btn {
+  background-color: #6fa3db;
+  color: #fff;
+  padding: 20px;
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.phone-btn:hover {
+  background-color: #0090cc;
+}
+
+/* ---------------------- HERO CONTENT ---------------------- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  padding: 0 20px 80px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #e6f2ff;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+  background-color: #ffcc00;
+  color: #111;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background-color: #e6b800;
+}
+
+/* ---------------------- CURVA ENTRE HERO Y VALUE ---------------------- */
+.curve-overlap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 0;
+}
+
+.curve-overlap svg {
+  display: block;
+  width: 100%;
+  height: 160px;
+  transform: translateY(30px);
+}
+
+/* ---------------------- VALUE SECTION ---------------------- */
+.value-section {
+  background-color: #f4f7fb;
+  position: relative;
+  z-index: 0;
+  padding: 100px 20px;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.value-text h2 {
+  font-size: 2.5rem;
+  color: #053687;
+  margin-bottom: 20px;
+}
+
+.value-text p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.value-image img {
+  max-width: 100%;
+}
+
+/* ---------------------- SERVICES - FLIP CARDS ---------------------- */
+.services {
+  padding: 100px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.3rem;
+  color: #053687;
+  margin-bottom: 20px;
+}
+
+.cta-inline {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.flip-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.flip-front {
+  background-color: #fff;
+  color: #053687;
+  font-weight: bold;
+}
+
+.flip-back {
+  background-color: #053687;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ---------------------- BOOKING SECTION ---------------------- */
+.booking {
+  background-color: #f4f7fb;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.booking h2 {
+  font-size: 2.3rem;
+  color: #053687;
+  margin-bottom: 10px;
+}
+
+.booking-sub {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.booking form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+}
+
+.booking input,
+.booking select {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  box-shadow: none;
+  appearance: none;
+}
+
+.booking select {
+  background-color: #fff;
+}
+
+.booking .btn {
+  background-color: #053687;
+  color: #fff;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.booking .btn:hover {
+  background-color: #2b7bd3;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+footer {
+  background-color: #111;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------- WHATSAPP FLOAT ---------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 100;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-img {
+    height: 200px;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .value-image {
+    margin-top: 30px;
+  }
+
+  .flip-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .phone-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .curve-overlap {
+    position: absolute;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  .curve-overlap svg {
+    width: 100%;
+    height: 48px;
+    display: block;
+    transform: none;
+  }
+
+  .hero-wrapper {
+    padding-bottom: 60px;
+  }
+}
